@@ -18,8 +18,5 @@ get_prop(bluetooth, incremental_prop)
 # Allow bluetooth to read proc filesystem
 allow bluetooth proc_filesystems:file r_file_perms;
 
-userdebug_or_eng(`
-  diag_use(hal_bluetooth_default)
-');
 # Ignore in user builds
 dontaudit hal_bluetooth_default vendor_diag_device:chr_file rw_file_perms;

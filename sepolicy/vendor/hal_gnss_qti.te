@@ -1,5 +1,4 @@
 userdebug_or_eng(`
-  diag_use(vendor_hal_gnss_qti)
   get_prop(vendor_hal_gnss_qti, vendor_pd_locater_dbg_prop)
 ')
 # Ignore in user builds
